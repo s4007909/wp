@@ -114,6 +114,38 @@ font-size: 18px;
 
 
 /* css for add.html  */
+
+
+body {
+   
+    margin: 0;
+    padding: 15px;
+    font-family: Ysabeau SC, sans-serif;
+    font-size: 13px;
+ }
+ 
+ .mandatory {
+    color: red;
+ }
+ 
+ 
+ form {
+ width: 100%; 
+ padding: 7px;
+ margin: 0; 
+ box-sizing: border-box; 
+ }
+ 
+ input[type="text"], select, textarea, input[type="file"] {
+ width: 100%; 
+ box-sizing: border-box ;
+ padding: 10px; 
+ margin: 0; 
+ }
+ 
+ 
+
+
 .file-upload {
     display: flex;
     align-items: center; 
@@ -144,7 +176,7 @@ font-size: 18px;
     cursor: pointer;
     border: none;
     outline: none;
- 
+    
 }
 
 .submit-btn {
@@ -171,6 +203,23 @@ font-size: 18px;
     font-size: 0.5px; 
    
   }
+
+
+
+.footera {
+    background-color:#E57F3D ; 
+    color:#36454F  ;
+    font-size: 10px; 
+    text-align: center; 
+    padding: 15px;
+    font-family:Ysabeau SC ;
+   
+    bottom: 0;
+    width: 100%;
+    border-radius: 25px;
+ 
+}
+
 
 
 
@@ -265,7 +314,7 @@ font-size: 18px;
 }
 
  
-  .pgallery {
+  .pgal {
     font-family: Poetsen One;
     font-size: 16px;
     border-radius: 25px;
@@ -274,7 +323,7 @@ font-size: 18px;
 
 
 
-.footergallery {
+.footerg {
     background-color:#E57F3D ; 
     color:#36454F  ;
     font-size: 10px; 
