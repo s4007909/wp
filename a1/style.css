@@ -176,55 +176,117 @@ font-size: 18px;
 
   /* css for gallery.html */
 
-  .gallery {
+  
+  .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 250px); 
-    gap: 0; 
-    padding: 0; 
-    margin-left: 20%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 650px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 25px;
+    
+    
+
+
 }
 
-.gallery-item {
-    border-radius: 5px; 
-    overflow: hidden; 
-    text-align: center; 
-    margin: 2px; 
-    max-width: 175px;
-    flex-wrap: wrap; 
-    justify-content: space-around;
+.image-container {
+    position: relative;
+    text-align: center;
+    border-radius: 25px;
     border: 1px solid #c2c2c2;
+    display: block;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display:flex
+   
+
+
+
+}
+
+.image-container p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #333;
     
 }
 
-.gallery-item img {
-    width: 100%; 
-    height: auto; 
-    display: block;
-    object-fit: cover;
-    margin-left: 0%;
-}
-
-.gallery-item p {
-    margin: 0;
-    padding: 10px; 
-
-    border-radius: 0 0 25px 25px; 
-    font-size: 10px; 
-    font-family:Poetsen One ;
-    bottom: 0;
+.hover-text {
+    position: absolute;
+    top: 0;
     left: 0;
-    right: 0;
-
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: rgba(195, 193, 193, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: Ysabeau SC;
 }
 
-.container {
-    max-width: 90%; 
-    margin:  auto; 
+.image-container:hover .hover-text {
+    opacity: 1;
+    border-radius: 25px;
 }
 
 
 
+.hover-text span {
+    font-size: 16px;
+    font-family: Ysabeau SC;
+    text-decoration: underline; 
+}
 
+
+.text {
+   
+    color: black;
+    font-size: 10px;
+    padding: 16px 32px;
+    font-family: Poetsen One;
+  }
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+ 
+  .pgallery {
+    font-family: Poetsen One;
+    font-size: 16px;
+    border-radius: 25px;
+    
+  }
+
+
+
+.footergallery {
+    background-color:#E57F3D ; 
+    color:#36454F  ;
+    font-size: 10px; 
+    text-align: center; 
+    padding: 15px;
+    font-family:Ysabeau SC ;
+   
+    bottom: 0;
+    width: 100%;
+    border-radius: 25px;
+ 
+}
 
 
 /* footer css */
