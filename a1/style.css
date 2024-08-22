@@ -55,16 +55,15 @@ font-size: 18px;
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 150;
+    font-size: 150px;
     color:#E57F3D ;
   }
 
 
   .ysabeau-sc {
     font-family: "Ysabeau SC", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
-    font-size: 100;
+    font-size: 100px;
     color: #36454F; 
   }
   
@@ -145,7 +144,7 @@ font-size: 18px;
     cursor: pointer;
     border: none;
     outline: none;
-    box-shadow: 0 1px 32x rgba(0, 0, 0, 0.1); 
+ 
 }
 
 .submit-btn {
