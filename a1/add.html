@@ -6,7 +6,7 @@
     <meta charset=utf-8>
     <script src=main.js></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@400;700&display=swap" rel="stylesheet">
@@ -72,15 +72,18 @@ input[type="text"], select, textarea, input[type="file"] {
         <div class="nav-links">
             <ul>
 
-                <div class="dropdown">
-                <select id="menu" onchange=doMenu();>
-                    <option value="">Select An Option...</option>
-                    <option value="index.html">Index</option>
-                    <option value="pets.html">Pets</option>
-                    <option value="add.html">Add</option>
-                    <option value="gallery.html">Gallery</option>
-                </select>
-                </div>
+                <li> 
+                    <div class="dropdown">
+                        <select id="menu" onchange="doMenu();">
+                            <option value="">Select An Option...</option>
+                            <option value="index.html">Index</option>
+                            <option value="pets.html">Pets</option>
+                            <option value="add.html">Add</option>
+                            <option value="gallery.html">Gallery</option>
+                        </select>
+                    </div>
+                </li>
+
             </ul>
         </div>
         <div class="search">
@@ -92,6 +95,7 @@ input[type="text"], select, textarea, input[type="file"] {
         </div>
     </nav>
     
+   
     <h2 style="font-family: Poetsen One; font-size: 20px; text-align: center; margin-bottom: 5px;"> Add A Pet </h2>
     <p style="font-family: Ysabeau SC ; font-size: 15px; text-align: center;margin-bottom: 2px;">You can add a new pet here </p>
 
