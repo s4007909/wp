@@ -4,6 +4,7 @@
 <head>
     <title>Pets</title>
     <meta charset=utf-8>
+    <script src=main.js></script>
     <link rel="stylesheet" type="text/css" href="style.css" rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -52,16 +53,23 @@
 
 
 <body>
+   
     <nav class="navbar">
         <div class="logo">
             <img src="logo.png" alt="Logo">
         </div>
         <div class="nav-links">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Pets</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Add</a></li>
+
+                <div class="dropdown">
+                <select id="menu" onchange=doMenu();>
+                    <option value="">Select An Option...</option>
+                    <option value="index.html">Index</option>
+                    <option value="pets.html">Pets</option>
+                    <option value="add.html">Add</option>
+                    <option value="gallery.html">Gallery</option>
+                </select>
+                </div>
             </ul>
         </div>
         <div class="search">
