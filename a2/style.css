@@ -1,0 +1,355 @@
+
+/* css for nav */
+
+.navbar {
+    background-color: #008080;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar .nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a  {
+color: #ffffff;
+text-decoration: none;
+font-size: 18px;
+
+
+}
+
+.navbar .search input {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+}
+
+
+
+.navbar .search .material-icons {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.navbar .search button:hover {
+    background-color: #e5e5e5;
+
+}
+
+
+
+/* css for google fonts */
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150px;
+    color:#E57F3D ;
+  }
+
+
+  .ysabeau-sc {
+    font-family: "Ysabeau SC", sans-serif;
+    font-style: normal;
+    font-size: 100px;
+    color: #36454F; 
+  }
+  
+
+  .poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #008080;
+  }
+
+
+
+
+/* css for index.html */
+.aside1 {
+    width: 20%;
+    padding: 10px;
+    font-size: 120%;
+    float: right;
+    object-fit:cover ;
+    margin-right: 15%;
+
+}
+
+.aside2{
+    float: left;
+    margin-right: 15%;
+}
+
+
+
+/* css for pets.html */
+.aside3 {
+    float: left;
+    object-fit:cover ;
+    margin-right: 5%;
+    
+
+}
+
+.aside4{
+    float: right;
+    margin-left: 5%;
+    
+}
+
+
+
+/* css for add.html  */
+
+
+body {
+   
+    margin: 0;
+    padding: 15px;
+    font-family: Ysabeau SC, sans-serif;
+    font-size: 13px;
+ }
+ 
+ .mandatory {
+    color: red;
+ }
+ 
+ 
+ form {
+ width: 100%; 
+ padding: 7px;
+ margin: 0; 
+ box-sizing: border-box; 
+ }
+ 
+ input[type="text"], select, textarea, input[type="file"] {
+ width: 100%; 
+ box-sizing: border-box ;
+ padding: 10px; 
+ margin: 0; 
+ }
+ 
+ 
+
+
+.file-upload {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+.file-upload label {
+    margin-right: 10px; 
+}
+
+.max-size {
+    color: red;
+    font-size: 9px; 
+    margin-right: 70%;
+    white-space: nowrap; 
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+}
+
+.submit-btn, .clear-btn {
+    padding: 5px 15px; 
+    border-radius: 50px; 
+    font-size: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+}
+
+.submit-btn {
+    background-color: #008080;
+    color: white; 
+}
+
+.clear-btn {
+    background-color: transparent; 
+    color: #008080; 
+    border: 2px solid #008080; 
+}
+
+.submit-btn:hover, .clear-btn:hover {
+    opacity: 0.9; 
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 1;
+    font-size: 0.5px; 
+   
+  }
+
+
+
+.footera {
+    background-color:#E57F3D ; 
+    color:#36454F  ;
+    font-size: 10px; 
+    text-align: center; 
+    padding: 15px;
+    font-family:Ysabeau SC ;
+   
+    bottom: 0;
+    width: 100%;
+    border-radius: 25px;
+ 
+}
+
+
+
+
+  /* css for gallery.html */
+
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 650px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 25px;
+    
+    
+
+
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #c2c2c2;
+    display: block;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display:flex
+   
+
+
+
+}
+
+.image-container p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #333;
+    
+}
+
+.hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: rgba(195, 193, 193, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: Ysabeau SC;
+}
+
+.image-container:hover .hover-text {
+    opacity: 1;
+    border-radius: 25px;
+}
+
+
+
+.hover-text span {
+    font-size: 16px;
+    font-family: Ysabeau SC;
+    text-decoration: underline; 
+}
+
+
+.text {
+   
+    color: black;
+    font-size: 10px;
+    padding: 16px 32px;
+    font-family: Poetsen One;
+  }
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+ 
+  .pgal {
+    font-family: Poetsen One;
+    font-size: 16px;
+    border-radius: 25px;
+    
+  }
+
+
+
+.footerg {
+    background-color:#E57F3D ; 
+    color:#36454F  ;
+    font-size: 10px; 
+    text-align: center; 
+    padding: 15px;
+    font-family:Ysabeau SC ;
+   
+    bottom: 0;
+    width: 100%;
+    border-radius: 25px;
+ 
+}
+
+
+/* footer css */
+.footer {
+    background-color:#E57F3D ; 
+    color:#36454F  ;
+    font-size: 10px; 
+    text-align: center; 
+    padding: 13px;
+    font-family:Ysabeau SC ;
+    align-items: baseline;
+    position: absolute;
+    width: 100%;
+    border-radius: 20px;
+    bottom: 0;
+ 
+}
