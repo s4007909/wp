@@ -10,9 +10,9 @@ $password = "";
 $dbname = "WP";
 } else {
 $servername = "talsprddb02.int.its.rmit.edu.au";
-$username = "s4007082";
-$password = "Rmit1234!";
-$dbname = "s4007082";
+$username = "s4007909";
+$password = "Cricket_10!";
+$dbname = "s4007909";
 }
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
