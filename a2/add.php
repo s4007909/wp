@@ -65,13 +65,17 @@
 
 
       <?php include 'footer.inc'; ?>
+ 
+
+</div>
+</body>
+
+</html>
   <!-- <footer class="footer">
         <p>© COPYRIGHT S4007909. ALL RIGHTS RESERVED | DESIGNED FOR PETS VICTORIA <br>
        
       </footer> -->
 
-</div>
-</body>
 
 
 
