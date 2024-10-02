@@ -8,6 +8,8 @@
 
 <head>
     <title>Details</title>
+
+</head>
     
 
 
