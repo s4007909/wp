@@ -3,13 +3,11 @@
 <?php include 'db_connect.inc'; ?>
 
 
-<?php 
-$pets = mysqli_query($conn, "select * from petname");
-?>
 
 
 <body>
 
+<div class="wrapper">
 
 <?php include 'nav.inc'; ?>
    
@@ -24,7 +22,18 @@ $pets = mysqli_query($conn, "select * from petname");
 
     <aside class="aside4">
 
-        <table>
+       
+<?php 
+$pets = mysqli_query($conn, "select * from pets");
+$sql = "SELECT petid, petname, type, age, location FROM pets";
+$result = $conn->query($sql);
+
+
+$sql = "SELECT petid, petname, type, age, location FROM pets";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    echo '<table>
             <thead>
                 <tr>
                     <th>Pet</th>
@@ -33,61 +42,59 @@ $pets = mysqli_query($conn, "select * from petname");
                     <th>Location</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Milo</td>
-                    <td>Cat</td>
-                    <td>3 Months</td>
-                    <td>Melbourne CBD</td>
-                </tr>
-                <tr>
-                    <td>Baxter</td>
-                    <td>Dog</td>
-                    <td>5 Months</td>
-                    <td>Cape Woolamai</td>
-                </tr>
-                <tr>
-                    <td>Luna</td>
-                    <td>Cat</td>
-                    <td>1 month</td>
-                    <td>Ferntree Gully</td>
-                </tr>
-                <tr>
-                    <td>Willow</td>
-                    <td>Dog</td>
-                    <td>48 Months</td>
-                    <td>Marysville</td>
-                </tr>
-                <tr>
-                    <td>Oliver</td>
-                    <td>Cat</td>
-                    <td>12 months</td>
-                    <td>Grampians</td>
-                </tr>
-                <tr>
-                    <td>Bella</td>
-                    <td>Dog</td>
-                    <td>10 months</td>
-                    <td>Carlton</td>
-                </tr>
+            <tbody>';
+
+    // Fetch data and generate table rows with hyperlink in the "Pet" column
+    while($row = $result->fetch_assoc()) {
+        echo '<tr>';
+        
+        // Create the hyperlink for the pet's name
+        echo '<td><a href="details.php?id=' . $row['petid'] . '">' . $row['petname'] . '</a></td>';
+        echo '<td>' . $row['type'] . '</td>';
+
+        // Format the age as months or years
+        $age = $row['age'];
+        if ($age >= 12) {
+            // Convert age to years if greater than or equal to 12 months
+            $years = floor($age / 12);
+            echo '<td>' . $years . ' ' . ($years == 1 ? 'year' : 'years') . '</td>';
+        } else {
+            // Display age in months if less than 12 months
+            echo '<td>' . $age . ' months</td>';
+        }
+
+        // Display the location
+        echo '<td>' . $row['location'] . '</td>';
+        echo '</tr>';
+    }
+
+    echo '</tbody></table>';
+} else {
+    echo 'No pets found.';
+}
+
+$conn->close();
+?>
 
 
 
-            </tbody>
-        </table>
+
+</aside>
     
 
+<aside>
 
-
-
-    </aside>
-
-    <div style="position: absolute; bottom: 0; width: 100%;">
+<div style="position: absolute; bottom: 0; width: 100%;">
     <aside class="bottompage" style="display: flex; align-items: baseline;">
         <?php include 'footer.inc'; ?>
     </aside>
 
 
+
+</aside>
+
+
+</div>
 </div>
 
    
