@@ -44,26 +44,26 @@ if ($result->num_rows > 0) {
             </thead>
             <tbody>';
 
-    // Fetch data and generate table rows with hyperlink in the "Pet" column
+    
     while($row = $result->fetch_assoc()) {
         echo '<tr>';
         
-        // Create the hyperlink for the pet's name
+        
         echo '<td><a href="details.php?id=' . $row['petid'] . '">' . $row['petname'] . '</a></td>';
         echo '<td>' . $row['type'] . '</td>';
 
-        // Format the age as months or years
+        
         $age = $row['age'];
         if ($age >= 12) {
-            // Convert age to years if greater than or equal to 12 months
+            
             $years = floor($age / 12);
             echo '<td>' . $years . ' ' . ($years == 1 ? 'year' : 'years') . '</td>';
         } else {
-            // Display age in months if less than 12 months
+            
             echo '<td>' . $age . ' months</td>';
         }
 
-        // Display the location
+        
         echo '<td>' . $row['location'] . '</td>';
         echo '</tr>';
     }

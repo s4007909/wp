@@ -256,6 +256,8 @@ body {
     height: 400px;
     margin: 0 auto;
     border-radius: 25px;
+    justify-items: center;
+
     
     
 
@@ -283,7 +285,7 @@ body {
 .image-container p {
     margin-top: 8px;
     font-size: 16px;
-    color: #333;
+    color: #333;s
     
 }
 
@@ -358,6 +360,70 @@ body {
     border-radius: 25px;
  
 }
+
+
+
+/* details */
+
+.pet-image {
+    display: block;
+    margin: 20px auto; 
+    max-width: 100%;
+    height: auto; 
+    margin-left: 30%;
+
+}
+
+.pet-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.info-left, .info-middle, .info-right {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.info-left {
+    text-align: left;
+    margin-left: 2px;
+}
+
+.info-middle {
+    text-align: center;
+    margin-left: 30px;
+}
+
+.info-right {
+    text-align: right;
+    margin-left: 70px;
+}
+
+
+.pet-caption {
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.pet-description {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.material-symbols-outlined {
+    vertical-align: middle;
+    font-size: 24px;
+    margin-right: 8px;
+}
+
 
 
 /* footer css */
