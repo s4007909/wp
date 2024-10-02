@@ -1,31 +1,8 @@
 <?php include 'header.inc';?>
 
-<style>
 
-    body {background-color: #fcf9ec  ;}
-
-    .divstyle {
-        position: absolute; 
-        bottom: 0; 
-        width: 100%;
-
-    }
-    
-    .asideclass {
-        display: flex; 
-        align-items: baseline;
-    }
-   
-</style>
-
-
-
-
-
-
-
-
-<body>
+<body class="background">
+<div class="wrapper">
     <div>
 
 <?php include 'nav.inc';?>
@@ -61,6 +38,8 @@
         <?php include 'footer.inc';?>
     </aside>
 
+
+</div>
 
 </div>
 
