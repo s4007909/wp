@@ -3,7 +3,7 @@
 
 include 'db_connect.inc'; 
 
-// Fetch pet data from the database
+
 $query = "SELECT petid, petname, image FROM pets";
 $result = mysqli_query($conn, $query);
 ?>
@@ -21,11 +21,11 @@ $result = mysqli_query($conn, $query);
 
 <div class="image-grid">
     <?php
-    // Loop through each pet in the database
+   
     while($row = mysqli_fetch_assoc($result)) {
         $petid = $row['petid'];
         $petname = $row['petname'];
-        $image = $row['image']; // Image path stored in DB, e.g. "images/cat1.jpeg"
+        $image = $row['image'];
 
 
 
